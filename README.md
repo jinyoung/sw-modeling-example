@@ -49,8 +49,8 @@ and go to http://localhost:8080 then you will see:
 Install Httpie:  https://github.com/TheOpenCloudEngine/uEngine-cloud/wiki/Httpie-%EC%84%A4%EC%B9%98
 
 ```
-http localhost:8080/customer firstName="rick" lastName="jang"
-http localhost:8080/vehicle modelName="BMW" customer="http://localhost:8009/customer/1" 
+http localhost:8080/customer firstName="rick" lastName="jang"  #Register customer who's name is rick jang
+http localhost:8080/vehicle modelName="BMW" customer="http://localhost:8009/customer/1"   #add a vehicle info (BMW) for rick jang
 ```
 
 - Adding a customer through POSTMAN
