@@ -44,8 +44,11 @@ and go to http://localhost:8080 then you will see:
   }
 }
 ```
+### Adding a customer through HTTPie:
 
-Adding a customer through POSTMAN
+Install Httpie:  https://github.com/TheOpenCloudEngine/uEngine-cloud/wiki/Httpie-%EC%84%A4%EC%B9%98
+
+- Adding a customer through POSTMAN
 Turn the METHOD as: POST
 and set the body as "raw" and "JSON(application/json)"
 and finally enter the body json value as:
