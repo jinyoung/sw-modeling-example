@@ -19,6 +19,10 @@ git clone https://github.com/jinyoung/sw-modeling-example.git
 ```
 mvn spring-boot:run
 ```
+### For different port (Runs on 8001)
+```
+mvn spring-boot:run -Dserver.port=8001
+```
 
 if you don't have Apache Maven, download and intall Maven: https://zetawiki.com/wiki/%EC%9C%88%EB%8F%84%EC%9A%B0_%EB%A9%94%EC%9D%B4%EB%B8%90_%EC%84%A4%EC%B9%98
 
