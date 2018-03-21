@@ -36,7 +36,7 @@
 
     <iam-login iam-server="http://iam.uengine.io:8080" ref="login" id="jyjang@uengine.org" :listener="$root" v-if="!loggedIn"></iam-login>
 
-    <service-locator host="http://localhost:8080" ref="backend"></service-locator>
+    <service-locator host="http://auto-insurance-jjy.mybluemix.net" ref="backend"></service-locator>
 
     <md-tabs id="tab" @change="tabChanged" v-if="loggedIn">
         <md-tab id="name-and-address" md-label="Name And Address">

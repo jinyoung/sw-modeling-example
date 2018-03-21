@@ -26,11 +26,11 @@ import java.io.Serializable;
 @Entity
 @org.hibernate.annotations.Proxy(lazy=false)
 @Table(name="Customer")
-@Multitenant
-@TenantDiscriminatorColumn(
-		name = "TENANTID",
-		contextProperty = "tenant-id"
-)
+//@Multitenant
+//@TenantDiscriminatorColumn(
+//		name = "TENANTID",
+//		contextProperty = "tenant-id"
+//)
 public class Customer implements Serializable{
 	public Customer() {
 	}
@@ -147,19 +147,9 @@ public class Customer implements Serializable{
 		return String.valueOf(getId());
 	}
 
-	@Transient
-	@RestAggregator(
-			path = "/pools/default/buckets/default/docs/{{tenantId}}_{{entity.name}}_{{@id}}",
-			role = "http://localhost:8091"
-	)
-	TenantProperties tenantProperties;
-	@Hidden
-		public TenantProperties getTenantProperties() {
-			return tenantProperties;
-		}
-		public void setTenantProperties(TenantProperties tenantProperties) {
-			this.tenantProperties = tenantProperties;
-		}
-
+	@ServiceMethod
+	public void subscribe(){
+		//...
+	}
 
 }
