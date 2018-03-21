@@ -1,10 +1,27 @@
 # sw-modeling-example
 
+- Microservices version of this example - https://github.com/jinyoung/sw-modeling-example-msa
+
+## Prerequiste installations
+
+- https://github.com/TheOpenCloudEngine/uEngine-cloud-server/wiki/Tutorial
+
+## Cloning the repo.
+
+1. download the git client:   https://git-for-windows.github.io/
+1. lauch a terminal and enter 
+```
+git clone https://github.com/jinyoung/sw-modeling-example.git
+```
+
 ## Build and run
 ### Backend server (Runs on 8080)
 ```
 mvn spring-boot:run
 ```
+
+if you don't have Apache Maven, download and intall Maven: https://zetawiki.com/wiki/%EC%9C%88%EB%8F%84%EC%9A%B0_%EB%A9%94%EC%9D%B4%EB%B8%90_%EC%84%A4%EC%B9%98
+
 and go to http://localhost:8080 then you will see:
 ```
 {
@@ -81,5 +98,5 @@ and drag form or grid component to the canvas, and enter the name of class - com
 
 - 8080 충돌시 -> services.msc 실행 > 오라클 에이젠트 중지
 ### maven 
-- Class Not Found -> .m2/repository all delete
+- Class Not Found -> remove all the files under .m2/repository/**
 - Repository Not Found -> remove the .m2/setting.xml
